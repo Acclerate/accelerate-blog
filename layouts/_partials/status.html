@@ -1,7 +1,7 @@
 {{/*
-  覆盖主题 status.html：把右下角 "Built with Linewise" 的跳转链接
-  从 https://github.com/tabsp/linewise 改为自己的 GitHub 主页。
-  其他逻辑保持主题原样。
+  覆盖主题 status.html：
+  把右下角的 "Built with Linewise" 改为 "about me"，
+  链接到置顶的自我介绍文章 /posts/about-me/
 */}}
 {{ $file := .Title }}
 {{ with .File }}
@@ -18,12 +18,9 @@
   <span data-status-meta>{{ $meta }}</span>
   <a
     class="built-with"
-    href="https://github.com/Acclerate"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="View Acclerate on GitHub"
+    href="/posts/about-me/"
+    aria-label="About me"
   >
-    {{ partial "icon.html" (dict "name" "github") }}
-    <span class="built-with-text">Built with Linewise</span>
+    <span class="built-with-text">about me</span>
   </a>
 </footer>

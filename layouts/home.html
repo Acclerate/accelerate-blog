@@ -1,0 +1,26 @@
+{{/*
+  覆盖主题 home.html：
+  把置顶文章（front matter 里 weight=1）排在最前面，其余按日期倒序。
+  然后取前 8 篇显示在首页。
+
+  用法：在文章 front matter 加 `weight: 1` 即可置顶。
+*/}}
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{/*
+    分两组：有 weight 的（置顶组）+ 没 weight 的（普通组）
+    置顶组按 weight 升序，普通组按日期倒序
+  */}}
+  {{ $pinned   := where $posts "Params.weight" "ne" nil }}
+  {{ $pinned   = sort $pinned ".Params.weight" "asc" }}
+  {{ $normal   := where $posts "Params.weight" "eq" nil }}
+  {{ $normal   = sort $normal "Date" "desc" }}
+  {{ $posts    := $pinned | append $normal }}
+  {{ $posts    = first 8 $posts }}
+  {{ partial "page-list.html" (dict
+    "Pages" $posts
+    "Eyebrow" ":ls"
+    "Title" "Open buffers"
+    "Description" "Recently visited buffers. Fresh sessions start with the latest posts."
+  ) }}
+{{ end }}
