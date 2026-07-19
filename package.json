@@ -5,10 +5,11 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "deploy": "npm run build && wrangler deploy",
     "server": "hexo server",
     "sync": "yuque-hexo sync",
-    "clean:yuque": "yuque-hexo clean"
+    "clean:yuque": "yuque-hexo clean",
+    "preview": "npm run build && wrangler dev"
   },
   "hexo": {
     "version": "8.1.2"
@@ -38,5 +39,8 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "yuque-hexo": "^1.9.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.112.0"
   }
 }
