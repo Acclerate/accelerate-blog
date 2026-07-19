@@ -1,8 +1,13 @@
 ---
-title: npm常用命令
-urlname: gxkcf7l2x6gd2c9m
+title: 'npm常用命令'
+urlname: 'gxkcf7l2x6gd2c9m'
 date: '2023-04-23 11:20:10'
 updated: '2023-04-23 18:40:45'
+tags:
+  - Node.js
+  - npm
+  - 工具
+description: 'npm常用命令'
 ---
 ### 
 ```bash

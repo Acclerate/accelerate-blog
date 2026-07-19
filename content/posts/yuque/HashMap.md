@@ -1,8 +1,13 @@
 ---
-title: HashMap
-urlname: zc5kta7qxcalblh7
+title: 'HashMap'
+urlname: 'zc5kta7qxcalblh7'
 date: '2023-07-06 19:36:31'
 updated: '2023-07-18 00:35:08'
+tags:
+  - Java
+  - 集合
+  - 数据结构
+description: 'HashMap'
 ---
 hashMap的长度
 

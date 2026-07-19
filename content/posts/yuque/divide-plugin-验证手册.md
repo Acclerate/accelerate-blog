@@ -1,8 +1,13 @@
 ---
-title: divide-plugin-验证手册
-urlname: xn9rfpg6h62i1wvg
+title: 'divide-plugin-验证手册'
+urlname: 'xn9rfpg6h62i1wvg'
 date: '2026-07-06 14:36:41'
 updated: '2026-07-06 14:36:42'
+tags:
+  - 微服务
+  - ShenYu
+  - 网关
+description: 'divide-plugin-验证手册'
 ---
 # ShenYu 2.6.1 divide 插件功能验证手册
 ## 环境

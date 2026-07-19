@@ -1,8 +1,13 @@
 ---
-title: 微服务模块化结构规范（Spring Cloud + Gradle）
-urlname: tvlkb6yrmigp0iga
+title: '微服务模块化结构规范（Spring Cloud + Gradle）'
+urlname: 'tvlkb6yrmigp0iga'
 date: '2026-07-06 14:37:11'
 updated: '2026-07-06 14:37:11'
+tags:
+  - 微服务
+  - Spring Cloud
+  - 规范
+description: '微服务模块化结构规范（Spring Cloud + Gradle）'
 ---
 # 微服务模块化结构规范（Spring Cloud + Gradle）
 ## 一、模块划分与职责

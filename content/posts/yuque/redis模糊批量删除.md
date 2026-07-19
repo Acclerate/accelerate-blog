@@ -1,8 +1,12 @@
 ---
-title: redis模糊批量删除
-urlname: bgzmuvhkuv4a6lrt
+title: 'redis模糊批量删除'
+urlname: 'bgzmuvhkuv4a6lrt'
 date: '2023-05-05 17:07:30'
 updated: '2023-05-08 09:44:35'
+tags:
+  - Redis
+  - 运维
+description: 'redis模糊批量删除'
 ---
 没有直接批量模糊删除的办法，只有模糊获取对应集合，批量删除
 

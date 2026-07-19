@@ -1,8 +1,13 @@
 ---
-title: Spring三级缓存详解
-urlname: aiog7gxwls55q0am
+title: 'Spring三级缓存详解'
+urlname: 'aiog7gxwls55q0am'
 date: '2023-07-04 22:20:55'
 updated: '2023-07-06 15:45:14'
+tags:
+  - Spring
+  - 源码
+  - IoC
+description: 'Spring三级缓存详解'
 ---
 Spring三级缓存是为了解决对象间的循环依赖问题。
 

@@ -1,8 +1,13 @@
 ---
-title: ShenYu 网关注册接入 — 改动总结
-urlname: vaufxl2kgy7x30up
+title: 'ShenYu 网关注册接入 — 改动总结'
+urlname: 'vaufxl2kgy7x30up'
 date: '2026-07-06 14:36:51'
 updated: '2026-07-18 16:02:43'
+tags:
+  - 微服务
+  - ShenYu
+  - 网关
+description: 'ShenYu 网关注册接入 — 改动总结'
 ---
 # ✅ ShenYu 网关注册接入 — 改动总结
 已在分支 `feature/shenyu-register`(基于 `feature/0830`)完成全部改动，并通过实测验证注册成功。

@@ -1,8 +1,13 @@
 ---
-title: Java内存溢出排查思路
-urlname: qs74g9fnn8h1w435
+title: 'Java内存溢出排查思路'
+urlname: 'qs74g9fnn8h1w435'
 date: '2023-07-04 23:37:38'
 updated: '2023-07-04 23:38:29'
+tags:
+  - Java
+  - JVM
+  - 排查
+description: 'Java内存溢出排查思路'
 ---
 当遇到内存溢出问题时，以下是一些常见的排查思路和步骤：
 

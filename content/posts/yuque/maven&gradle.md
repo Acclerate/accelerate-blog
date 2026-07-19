@@ -1,8 +1,13 @@
 ---
-title: maven&gradle
-urlname: seg3hdgm9lhpgfwx
+title: 'maven&gradle'
+urlname: 'seg3hdgm9lhpgfwx'
 date: '2026-07-06 14:34:06'
 updated: '2026-07-06 14:35:59'
+tags:
+  - Maven
+  - Gradle
+  - 构建工具
+description: 'maven&gradle'
 ---
 好问题。先直接回答第一个,再详细展开 Maven 与 Gradle 在 Spring Boot 下的差异。
 

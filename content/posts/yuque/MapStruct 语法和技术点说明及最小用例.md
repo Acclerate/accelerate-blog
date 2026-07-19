@@ -1,8 +1,13 @@
 ---
-title: MapStruct 语法和技术点说明及最小用例
-urlname: fhhxfm1m04zy0zdz
+title: 'MapStruct 语法和技术点说明及最小用例'
+urlname: 'fhhxfm1m04zy0zdz'
 date: '2026-07-06 14:36:46'
 updated: '2026-07-06 14:36:46'
+tags:
+  - Java
+  - MapStruct
+  - 工具
+description: 'MapStruct 语法和技术点说明及最小用例'
 ---
 ### 一、 MapStruct 语法和技术点说明及最小用例
 这段代码中主要用到了以下 5 个 MapStruct 的核心特性：

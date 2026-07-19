@@ -1,8 +1,13 @@
 ---
-title: 多线程场景下使用 ArrayList
-urlname: yct9c3cgbdkb3afl
+title: '多线程场景下使用 ArrayList'
+urlname: 'yct9c3cgbdkb3afl'
 date: '2023-04-15 15:04:46'
 updated: '2023-06-02 11:57:32'
+tags:
+  - Java
+  - 并发
+  - 集合
+description: '多线程场景下使用 ArrayList'
 ---
 ArrayList应该是我们比较常用的集合了,在一般场景下使用是没有问题的，
 

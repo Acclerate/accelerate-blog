@@ -1,8 +1,13 @@
 ---
-title: Spring boot自定义注解实现接口缓存
-urlname: pveg5i87kvglq1v7
+title: 'Spring boot自定义注解实现接口缓存'
+urlname: 'pveg5i87kvglq1v7'
 date: '2023-04-17 14:29:05'
 updated: '2023-04-17 15:36:30'
+tags:
+  - Spring
+  - 缓存
+  - AOP
+description: 'Spring boot自定义注解实现接口缓存'
 ---
 <font style="color:rgb(36, 41, 46);background-color:rgb(251, 251, 251);">结合</font>**<font style="background-color:rgb(251, 251, 251);">spring boot aop切片编程</font>**<font style="color:rgb(36, 41, 46);background-color:rgb(251, 251, 251);">的特性，采取</font>**<font style="background-color:rgb(251, 251, 251);">自定义注解</font>**<font style="color:rgb(36, 41, 46);background-color:rgb(251, 251, 251);">的形式，借助</font>**<font style="background-color:rgb(251, 251, 251);">缓存redis</font>**<font style="color:rgb(36, 41, 46);background-color:rgb(251, 251, 251);">实现接口缓存，提高稳定接口访问效率</font>
 

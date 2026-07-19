@@ -1,8 +1,14 @@
 ---
-title: sign-plugin-验证手册
-urlname: mgesig7ablzdiomh
+title: 'sign-plugin-验证手册'
+urlname: 'mgesig7ablzdiomh'
 date: '2026-07-06 14:36:56'
 updated: '2026-07-18 16:02:40'
+tags:
+  - 微服务
+  - ShenYu
+  - 安全
+  - 加签验签
+description: 'sign-plugin-验证手册'
 ---
 # ShenYu 加签验签验证手册（SignPlugin × RequestPlugin × DividePlugin）
 > 适用版本：ShenYu admin/bootstrap 2.6.x ~ 2.7.x（网关侧），客户端侧基于本仓库 `shenyu-client-core` 的 `sign` 包。  

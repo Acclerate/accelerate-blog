@@ -1,8 +1,12 @@
 ---
-title: CompletableFuture.allOf(XXX).join();
-urlname: hfk7qpxr11mg9k42
+title: 'CompletableFuture.allOf(XXX).join();'
+urlname: 'hfk7qpxr11mg9k42'
 date: '2023-04-15 14:05:37'
 updated: '2023-06-29 09:25:49'
+tags:
+  - Java
+  - 并发
+description: 'CompletableFuture.allOf(XXX).join();'
 ---
 ```java
 public class Demo5 {

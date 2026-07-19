@@ -1,8 +1,13 @@
 ---
-title: 前端el-date-picker标签异常排查小记
-urlname: bz3quw85fq0e088v
+title: '前端el-date-picker标签异常排查小记'
+urlname: 'bz3quw85fq0e088v'
 date: '2023-05-09 19:19:38'
 updated: '2023-05-09 20:15:53'
+tags:
+  - 前端
+  - ElementUI
+  - 踩坑
+description: '前端el-date-picker标签异常排查小记'
 ---
 ```javascript
 <el-col layout-size="medium">

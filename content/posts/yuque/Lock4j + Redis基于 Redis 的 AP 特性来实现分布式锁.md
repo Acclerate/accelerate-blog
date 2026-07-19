@@ -1,8 +1,14 @@
 ---
-title: Lock4j + Redis基于 Redis 的 AP 特性来实现分布式锁
-urlname: ii3ehqwh6h938i75
+title: 'Lock4j + Redis基于 Redis 的 AP 特性来实现分布式锁'
+urlname: 'ii3ehqwh6h938i75'
 date: '2026-07-10 15:05:10'
 updated: '2026-07-11 12:21:00'
+tags:
+  - Redis
+  - 并发
+  - 分布式锁
+  - 微服务
+description: 'Lock4j + Redis基于 Redis 的 AP 特性来实现分布式锁'
 ---
 # `**@Lock4j**`** 方法级分布式锁注解**
 

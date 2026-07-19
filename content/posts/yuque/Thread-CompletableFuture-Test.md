@@ -1,8 +1,12 @@
 ---
-title: Thread-CompletableFuture-Test
-urlname: ppb2lr
+title: 'Thread-CompletableFuture-Test'
+urlname: 'ppb2lr'
 date: '2022-07-16 18:23:10'
 updated: '2023-04-17 15:36:57'
+tags:
+  - Java
+  - 并发
+description: 'Thread-CompletableFuture-Test'
 ---
 Thread
 

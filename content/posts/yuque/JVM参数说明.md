@@ -1,8 +1,13 @@
 ---
-title: JVM参数说明
-urlname: chbkb8ky7lwudhpx
+title: 'JVM参数说明'
+urlname: 'chbkb8ky7lwudhpx'
 date: '2023-04-18 14:17:43'
 updated: '2023-04-18 18:06:00'
+tags:
+  - Java
+  - JVM
+  - 调优
+description: 'JVM参数说明'
 ---
 ```java
 -Xms30720m -Xmx30720m -XX:MaxDirectMemorySize=1024m -XX:+PrintGC -XX:+PrintGCDateStamps -Xloggc:/home/admin/edas_logs/logs -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/admin/edas_logs/logs -XX:+UseG1GC -XX:PermSize=512m -XX:MaxPermSize=512m -Xmn5G -XX:SurvivorRatio=8 -XX:-UseAdaptiveSizePolicy  -Dspring.cloud.alicloud.acm.group=hsa-mbs-local-prd -Dspring.application.name=hsa-mbs-local      

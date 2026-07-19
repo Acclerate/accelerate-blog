@@ -1,8 +1,13 @@
 ---
-title: nvm安装
-urlname: wrsgfnmsalkblbb6
+title: 'nvm安装'
+urlname: 'wrsgfnmsalkblbb6'
 date: '2023-07-01 12:35:55'
 updated: '2023-07-01 12:36:34'
+tags:
+  - Node.js
+  - nvm
+  - 工具
+description: 'nvm安装'
 ---
 1、nvm安装
 

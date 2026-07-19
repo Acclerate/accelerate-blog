@@ -1,8 +1,13 @@
 ---
-title: Java - SPI机制
-urlname: tsc5n88qy9rtkgr4
+title: 'Java - SPI机制'
+urlname: 'tsc5n88qy9rtkgr4'
 date: '2023-07-03 21:34:39'
 updated: '2023-08-18 11:38:19'
+tags:
+  - Java
+  - SPI
+  - 源码
+description: 'Java - SPI机制'
 ---
 ## 1. 概念
 <font style="color:rgb(18, 18, 18);">在面向对象的设计原则中，一般推荐模块之间基于接口编程，通常情况下调用方模块是不会感知到被调用方模块的内部具体实现。一旦代码里面涉及具体实现类，就违反了开闭原则。如果需要替换一种实现，就需要修改代码。</font>
