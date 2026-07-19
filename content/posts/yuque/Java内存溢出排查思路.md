@@ -7,7 +7,7 @@ tags:
   - Java
   - JVM
   - 排查
-description: 'Java内存溢出排查思路'
+description: '从确认 OOM、生成 Heap Dump 到使用 jmap 等工具分析，总结内存溢出的排查步骤。'
 ---
 当遇到内存溢出问题时，以下是一些常见的排查思路和步骤：
 

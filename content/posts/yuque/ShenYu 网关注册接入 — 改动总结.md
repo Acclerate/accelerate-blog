@@ -8,7 +8,7 @@ tags:
   - ShenYu
   - 网关
   - 云原生
-description: 'ShenYu 网关注册接入 — 改动总结'
+description: '将应用作为 ShenYu client，启动时上报 HTTP 接口元数据，由 divide 插件统一转发。'
 ---
 # ✅ ShenYu 网关注册接入 — 改动总结
 已在分支 `feature/shenyu-register`(基于 `feature/0830`)完成全部改动，并通过实测验证注册成功。

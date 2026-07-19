@@ -7,7 +7,7 @@ tags:
   - Spring
   - 微服务
   - Spring Cloud
-description: '微服务模块化结构规范（Spring Cloud + Gradle）'
+description: 'Spring Cloud + Gradle 微服务的模块划分规范：公共、API、服务、Web、启动模块的职责拆分。'
 ---
 # 微服务模块化结构规范（Spring Cloud + Gradle）
 ## 一、模块划分与职责

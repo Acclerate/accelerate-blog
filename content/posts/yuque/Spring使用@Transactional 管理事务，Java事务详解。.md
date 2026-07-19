@@ -6,7 +6,7 @@ updated: '2023-07-24 16:07:17'
 tags:
   - Spring
   - 事务
-description: 'Spring使用@Transactional 管理事务，Java事务详解。'
+description: '从 ACID 特性出发，介绍 Spring @Transactional 注解的声明式事务管理与 Java 事务基础。'
 ---
 **Spring使用@Transactional 管理事务，Java事务详解。**
 

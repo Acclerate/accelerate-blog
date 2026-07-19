@@ -6,7 +6,7 @@ updated: '2023-04-17 15:36:57'
 tags:
   - Java
   - 并发
-description: 'Thread-CompletableFuture-Test'
+description: 'Java 多线程与 CompletableFuture 异步编程的测试代码合集。'
 ---
 Thread
 

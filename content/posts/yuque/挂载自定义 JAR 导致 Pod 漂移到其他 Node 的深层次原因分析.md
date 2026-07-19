@@ -7,7 +7,7 @@ tags:
   - K8s
   - 云原生
   - 微服务
-description: '挂载自定义 JAR 导致 Pod 漂移到其他 Node 的深层次原因分析'
+description: '分析挂载自定义 JAR 后 Kubernetes Pod 漂移到其他 Node 的深层次原因与迁移预案。'
 ---
 # shenyu挂载自定义 JAR 导致 Pod 漂移到其他 Node 的深层次原因分析
 > **适用场景说明**：本文第二~四章描述的 "Pod 漂移" 是 **Kubernetes** 场景的理论分析与迁移预案。  

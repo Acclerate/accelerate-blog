@@ -5,7 +5,7 @@ date: '2026-07-11 15:12:43'
 updated: '2026-07-15 10:20:31'
 tags:
   - Nginx
-description: 'Nginx 配置'
+description: '常用 Nginx 配置片段合集：SSL 证书、动静分离、直接返回文本、location 重写等。'
 ---
 # 
 ## SSL证书

@@ -6,7 +6,7 @@ updated: '2023-06-02 11:57:32'
 tags:
   - Java
   - 并发
-description: '多线程场景下使用 ArrayList'
+description: 'ArrayList 非线程安全，多线程下可用 Collections.synchronizedList 或 CopyOnWriteArrayList。'
 ---
 ArrayList应该是我们比较常用的集合了,在一般场景下使用是没有问题的，
 

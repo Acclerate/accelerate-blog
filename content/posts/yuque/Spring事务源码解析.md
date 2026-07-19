@@ -7,7 +7,7 @@ tags:
   - Spring
   - 事务
   - 源码
-description: 'Spring事务源码解析'
+description: '深入 Spring 声明式事务源码，解析基于 AOP 的代理对象生成与事务拦截流程。'
 ---
 **Spring事务源码解析**
 

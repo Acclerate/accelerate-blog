@@ -8,7 +8,7 @@ tags:
   - Gradle
   - 构建工具
   - IDEA
-description: '常用类似 maven idea 的命'
+description: 'IntelliJ IDEA 项目文件 .ipr / .iws / .iml 的生成命令与作用说明。'
 ---
 <font style="color:rgb(77, 77, 77);">生成.ipr文件: </font>
 

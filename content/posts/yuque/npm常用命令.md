@@ -7,7 +7,7 @@ tags:
   - Node.js
   - npm
   - 工具
-description: 'npm常用命令'
+description: 'npm 常用配置与命令：修改 prefix/cache 路径、.npmrc 文件、全局包管理等。'
 ---
 ### 
 ```bash

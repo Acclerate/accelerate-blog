@@ -6,7 +6,7 @@ updated: '2023-04-18 18:06:00'
 tags:
   - Java
   - JVM
-description: 'JVM参数说明'
+description: '梳理常用 JVM 启动参数：堆大小、GC 策略、日志输出、内存溢出转储等配置项。'
 ---
 ```java
 -Xms30720m -Xmx30720m -XX:MaxDirectMemorySize=1024m -XX:+PrintGC -XX:+PrintGCDateStamps -Xloggc:/home/admin/edas_logs/logs -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/admin/edas_logs/logs -XX:+UseG1GC -XX:PermSize=512m -XX:MaxPermSize=512m -Xmn5G -XX:SurvivorRatio=8 -XX:-UseAdaptiveSizePolicy  -Dspring.cloud.alicloud.acm.group=hsa-mbs-local-prd -Dspring.application.name=hsa-mbs-local      

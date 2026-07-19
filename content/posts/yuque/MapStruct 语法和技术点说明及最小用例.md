@@ -6,7 +6,7 @@ updated: '2026-07-06 14:36:46'
 tags:
   - Spring
   - MapStruct
-description: 'MapStruct 语法和技术点说明及最小用例'
+description: '梳理 MapStruct 的 @Mapper、多源参数映射等 5 个核心特性，含最小可运行用例。'
 ---
 ### 一、 MapStruct 语法和技术点说明及最小用例
 这段代码中主要用到了以下 5 个 MapStruct 的核心特性：

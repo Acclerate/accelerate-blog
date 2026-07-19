@@ -7,7 +7,7 @@ tags:
   - Java
   - 集合
   - 数据结构
-description: 'HashMap'
+description: '从默认长度、扩容机制到数组/链表/红黑树的转换流程，梳理 HashMap 的核心原理。'
 ---
 hashMap的长度
 

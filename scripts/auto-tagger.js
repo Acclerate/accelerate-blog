@@ -222,4 +222,57 @@ function autoTag(title, body = '') {
   return result;
 }
 
-module.exports = { autoTag, PRIMARY_RULES, EXTRA_RULES, DEFAULT_TAGS };
+// ============================================================
+// 自动生成 description（用于未来同步的新文章）
+// 策略：取正文第一段非空文本，截断到 ~80 字
+// ============================================================
+
+/**
+ * 从正文中提取第一段有意义的文字作为 description
+ * @param {string} title 文章标题（避免 description 与 title 完全相同）
+ * @param {string} body  正文
+ * @returns {string}
+ */
+function autoDescription(title, body = '') {
+  if (!body) return title || '';
+
+  let text = body;
+
+  // 去掉代码块 ```...```
+  text = text.replace(/```[\s\S]*?```/g, '');
+  // 去掉行内代码 `xxx`
+  text = text.replace(/`[^`]+`/g, '');
+  // 去掉 HTML 标签（语雀导出的 font/span/div 等）
+  text = text.replace(/<[^>]+>/g, '');
+  // 去掉 markdown 标题井号
+  text = text.replace(/^#{1,6}\s*/gm, '');
+  // 去掉 markdown 图片/链接语法
+  text = text.replace(/!\[[^\]]*\]\([^)]*\)/g, '');
+  text = text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+  // 去掉语雀的 :::xxx 块标记
+  text = text.replace(/^:::[a-zA-Z0-9]*$/gm, '');
+
+  // 按空行分段，取第一个非空且长度 > 5 的段
+  const paragraphs = text.split(/\n\s*\n/);
+  let firstParagraph = '';
+  for (const p of paragraphs) {
+    const cleaned = p.replace(/\s+/g, ' ').trim();
+    if (cleaned.length > 5) {
+      firstParagraph = cleaned;
+      break;
+    }
+  }
+
+  if (!firstParagraph) {
+    // 实在提取不到，退化为标题
+    return title || '';
+  }
+
+  // 截断到 80 字（加省略号）
+  if (firstParagraph.length > 80) {
+    return firstParagraph.slice(0, 80) + '…';
+  }
+  return firstParagraph;
+}
+
+module.exports = { autoTag, autoDescription, PRIMARY_RULES, EXTRA_RULES, DEFAULT_TAGS };

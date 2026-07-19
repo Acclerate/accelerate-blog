@@ -7,7 +7,7 @@ tags:
   - Spring
   - Redis
   - 分布式锁
-description: 'Lock4j + Redis基于 Redis 的 AP 特性来实现分布式锁'
+description: '解析 @Lock4j 注解的属性、key 生成规则、典型用法与基于 Redis AP 特性的底层流程。'
 ---
 # `**@Lock4j**`** 方法级分布式锁注解**
 

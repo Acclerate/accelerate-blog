@@ -7,7 +7,7 @@ tags:
   - Node.js
   - nvm
   - 运维
-description: 'nvm安装'
+description: 'Windows 下 nvm-setup.exe 的安装步骤、Node 版本管理与常用命令中文示意。'
 ---
 1、nvm安装
 

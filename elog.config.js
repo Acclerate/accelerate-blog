@@ -11,7 +11,7 @@
  * 版本：@elog/cli 0.12.x
  */
 
-const { autoTag } = require('./scripts/auto-tagger');
+const { autoTag, autoDescription } = require('./scripts/auto-tagger');
 
 module.exports = {
   // ===== 写作平台：从哪里拉文章 =====
@@ -62,9 +62,12 @@ module.exports = {
         if (!doc.properties) doc.properties = {};
         doc.properties.tags = tags;
 
-        // 补 description（如果缺失）
+        // 补 description（如果缺失）：从正文第一段提取，避免与 title 完全相同
         if (!doc.properties.description) {
-          doc.properties.description = doc.title;
+          doc.properties.description = autoDescription(
+            doc.title,
+            doc.body_original || doc.body || ''
+          );
         }
 
         return doc;

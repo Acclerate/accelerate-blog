@@ -6,7 +6,7 @@ updated: '2023-06-29 09:25:49'
 tags:
   - Java
   - 并发
-description: 'CompletableFuture.allOf(XXX).join();'
+description: '使用 CompletableFuture.allOf 等待多个异步任务全部完成后继续执行的代码示例。'
 ---
 ```java
 public class Demo5 {

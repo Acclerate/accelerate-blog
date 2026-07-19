@@ -7,7 +7,7 @@ tags:
   - Python
   - Anaconda
   - 工具
-description: 'Anaconda创建、删除虚拟环境以及一些conda常用指令'
+description: '使用 conda create / remove / clone 管理虚拟环境，附常用 conda 指令速查。'
 ---
 ## <font style="color:rgb(79, 79, 79);">一、Anaconda创建、删除和复制环境</font>
 ### **<font style="color:rgb(79, 79, 79);">1. 创建虚拟环境</font>**

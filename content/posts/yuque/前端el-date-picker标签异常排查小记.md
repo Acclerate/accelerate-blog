@@ -8,7 +8,7 @@ tags:
   - ElementUI
   - 踩坑
   - 排查
-description: '前端el-date-picker标签异常排查小记'
+description: 'ElementUI el-date-picker 更新时数据为空的排查：用 this.$forceUpdate() 强制刷新视图。'
 ---
 ```javascript
 <el-col layout-size="medium">

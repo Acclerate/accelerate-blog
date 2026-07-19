@@ -7,7 +7,7 @@ tags:
   - Spring
   - 事务
   - 踩坑
-description: 'spring 事务失效'
+description: '汇总 Spring 事务常见的失效场景：非 public 方法、自调用、异常被吞、传播行为错误等。'
 ---
 ### 1.方法不是public修饰
 ### 2.方法所在的类没有被spring管理

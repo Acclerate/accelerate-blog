@@ -8,7 +8,7 @@ tags:
   - MySQL
   - 索引
   - 数据结构
-description: 'B+Tree详解'
+description: '从二叉查找树、平衡二叉树到 B 树，层层递进解析 InnoDB 索引背后的 B+Tree 结构。'
 ---
 ## B+Tree的来源
 在日常的开发和面试中经常接触的就是InnoDB存储引擎中的B+Tree索引。而学习B+Tree之前先要学习二叉查找树，平衡二叉树，B数这三种数据结构。

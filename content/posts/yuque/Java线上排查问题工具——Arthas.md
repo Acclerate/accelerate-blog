@@ -8,7 +8,7 @@ tags:
   - Arthas
   - 排查
   - 工具
-description: 'Java线上排查问题工具——Arthas'
+description: '阿里开源的 Java 在线诊断工具，无需重启应用即可查看方法调用、监控耗时。'
 ---
 **Java线上排查问题工具——Arthas**
 

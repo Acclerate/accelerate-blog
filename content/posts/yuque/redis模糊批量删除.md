@@ -5,7 +5,7 @@ date: '2023-05-05 17:07:30'
 updated: '2023-05-08 09:44:35'
 tags:
   - Redis
-description: 'redis模糊批量删除'
+description: 'Redis 没有直接的模糊批量删除命令，通过 SCAN + DEL 组合实现安全的批量删除。'
 ---
 没有直接批量模糊删除的办法，只有模糊获取对应集合，批量删除
 

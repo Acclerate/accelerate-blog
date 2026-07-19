@@ -8,7 +8,7 @@ tags:
   - Maven
   - Gradle
   - 构建工具
-description: 'maven&gradle'
+description: '对比 Maven 与 Gradle 在 Spring Boot 项目下的差异，分析 bootRun 是否为推荐运行方式。'
 ---
 好问题。先直接回答第一个,再详细展开 Maven 与 Gradle 在 Spring Boot 下的差异。
 

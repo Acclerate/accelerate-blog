@@ -7,7 +7,7 @@ tags:
   - Spring
   - 源码
   - IoC
-description: 'Spring三级缓存详解'
+description: '从getSingleton、doCreateBean 到三级缓存源码，解析 Spring 如何解决循环依赖。'
 ---
 Spring三级缓存是为了解决对象间的循环依赖问题。
 

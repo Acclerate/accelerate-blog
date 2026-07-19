@@ -9,7 +9,7 @@ tags:
   - 网关
   - 工具
   - 云原生
-description: 'divide-plugin-验证手册'
+description: 'ShenYu 2.6.1 divide 插件的功能验证手册，覆盖环境搭建与流量转发测试。'
 ---
 # ShenYu 2.6.1 divide 插件功能验证手册
 ## 环境

@@ -9,7 +9,7 @@ tags:
   - 网关
   - 工具
   - 安全
-description: 'sign-plugin-验证手册'
+description: 'ShenYu 加签验签插件验证手册，基于 RSA-SHA256 实现支付级请求签名校验。'
 ---
 # ShenYu 加签验签验证手册（SignPlugin × RequestPlugin × DividePlugin）
 > 适用版本：ShenYu admin/bootstrap 2.6.x ~ 2.7.x（网关侧），客户端侧基于本仓库 `shenyu-client-core` 的 `sign` 包。  
