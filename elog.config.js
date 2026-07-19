@@ -48,15 +48,21 @@ module.exports = {
   },
 
   deploy: {
-    // 语雀 Token 模式（需要语雀会员）
-    // 想用账号密码模式，把 type 改成 'yuque-pwd'
-    type: 'yuque',
-    yuque: {
-      // 知识库 login + repo（需用户在 .elog.env 或环境变量里替换）
+    // 语雀账号密码模式（免费，不需会员）
+    // 注意：账号密码模式只适合本地同步，不要在 GitHub Actions 等
+    //       海外 CI 环境使用（会被语雀风控当成海外登录）
+    // 如果你有语雀超级会员并想用 CI 自动同步，可改回 Token 模式：
+    //   type: 'yuque' + token: process.env.YUQUE_TOKEN
+    type: 'yuque-pwd',
+    yuquePwd: {
+      // 用户名（一般是手机号，如 13800138000）
+      username: process.env.YUQUE_USERNAME,
+      // 登录密码
+      password: process.env.YUQUE_PASSWORD,
+      // 知识库 login（个人路径，如 acclerate）
       login: process.env.YUQUE_LOGIN,
+      // 知识库 repo（知识库短地址，如 blog）
       repo: process.env.YUQUE_REPO,
-      // Token（需用户在 .elog.env 或环境变量里替换）
-      token: process.env.YUQUE_TOKEN,
       // 只同步已发布文章
       onlyPublished: true,
       // 只同步公开文章（false 表示私有也同步）
