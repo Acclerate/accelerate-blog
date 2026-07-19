@@ -6,7 +6,6 @@ updated: '2023-04-18 18:06:00'
 tags:
   - Java
   - JVM
-  - 调优
 description: 'JVM参数说明'
 ---
 ```java

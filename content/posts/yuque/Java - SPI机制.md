@@ -6,7 +6,7 @@ updated: '2023-08-18 11:38:19'
 tags:
   - Java
   - SPI
-  - 源码
+  - 原理
 description: 'Java - SPI机制'
 ---
 ## 1. 概念

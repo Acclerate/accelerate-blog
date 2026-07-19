@@ -5,8 +5,8 @@ date: '2026-07-06 14:37:01'
 updated: '2026-07-06 14:37:01'
 tags:
   - K8s
-  - 踩坑
-  - 原理
+  - 云原生
+  - 微服务
 description: '挂载自定义 JAR 导致 Pod 漂移到其他 Node 的深层次原因分析'
 ---
 # shenyu挂载自定义 JAR 导致 Pod 漂移到其他 Node 的深层次原因分析

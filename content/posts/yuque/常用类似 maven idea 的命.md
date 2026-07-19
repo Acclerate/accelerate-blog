@@ -5,8 +5,9 @@ date: '2023-06-27 09:52:52'
 updated: '2023-06-28 10:53:37'
 tags:
   - Maven
+  - Gradle
+  - 构建工具
   - IDEA
-  - 工具
 description: '常用类似 maven idea 的命'
 ---
 <font style="color:rgb(77, 77, 77);">生成.ipr文件: </font>

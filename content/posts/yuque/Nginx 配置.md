@@ -5,8 +5,6 @@ date: '2026-07-11 15:12:43'
 updated: '2026-07-15 10:20:31'
 tags:
   - Nginx
-  - 运维
-  - 工具
 description: 'Nginx 配置'
 ---
 # 

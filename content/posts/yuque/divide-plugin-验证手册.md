@@ -7,6 +7,8 @@ tags:
   - 微服务
   - ShenYu
   - 网关
+  - 工具
+  - 云原生
 description: 'divide-plugin-验证手册'
 ---
 # ShenYu 2.6.1 divide 插件功能验证手册

@@ -6,8 +6,9 @@ updated: '2026-07-18 16:02:40'
 tags:
   - 微服务
   - ShenYu
+  - 网关
+  - 工具
   - 安全
-  - 加签验签
 description: 'sign-plugin-验证手册'
 ---
 # ShenYu 加签验签验证手册（SignPlugin × RequestPlugin × DividePlugin）

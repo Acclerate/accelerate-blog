@@ -7,6 +7,7 @@ tags:
   - 微服务
   - ShenYu
   - 网关
+  - 云原生
 description: 'ShenYu 网关注册接入 — 改动总结'
 ---
 # ✅ ShenYu 网关注册接入 — 改动总结

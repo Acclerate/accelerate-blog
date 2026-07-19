@@ -6,7 +6,7 @@ updated: '2023-07-01 12:36:34'
 tags:
   - Node.js
   - nvm
-  - 工具
+  - 运维
 description: 'nvm安装'
 ---
 1、nvm安装

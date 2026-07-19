@@ -6,7 +6,6 @@ updated: '2023-08-03 09:42:01'
 tags:
   - Windows
   - 运维
-  - 工具
 description: 'win查看所有端口和PID'
 ---
 <font style="color:rgb(77, 77, 77);">控制台最后会显示Application启动失败，如下：</font>

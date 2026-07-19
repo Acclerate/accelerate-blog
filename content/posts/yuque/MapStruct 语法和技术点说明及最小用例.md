@@ -4,9 +4,8 @@ urlname: 'fhhxfm1m04zy0zdz'
 date: '2026-07-06 14:36:46'
 updated: '2026-07-06 14:36:46'
 tags:
-  - Java
+  - Spring
   - MapStruct
-  - 工具
 description: 'MapStruct 语法和技术点说明及最小用例'
 ---
 ### 一、 MapStruct 语法和技术点说明及最小用例
