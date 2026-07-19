@@ -1,0 +1,52 @@
+<!doctype html>
+{{ $linewise := site.Params.linewise | default dict }}
+{{ $showExplorer := true }}
+{{ if isset $linewise "showExplorer" }}
+  {{ $showExplorer = $linewise.showExplorer }}
+{{ end }}
+{{ $showBufferline := true }}
+{{ if isset $linewise "showBufferline" }}
+  {{ $showBufferline = $linewise.showBufferline }}
+{{ end }}
+<html lang="{{ site.Language.Lang }}" dir="ltr">
+  <head>
+    {{ partial "head.html" . }}
+    <script>
+      document.documentElement.classList.add("app-loading");
+      if (window.matchMedia("(max-width: 760px)").matches) {
+        document.documentElement.classList.add("explorer-hidden");
+        document.documentElement.classList.remove("explorer-open");
+      }
+    </script>
+  </head>
+  <body
+    class="{{ if not $showExplorer }}no-explorer{{ end }}{{ if and (not $showExplorer) (not $showBufferline) }} {{ end }}{{ if not $showBufferline }}no-bufferline{{ end }}"
+    data-lw-route="{{ .Kind }}"
+    data-route-type="{{ .Kind }}"
+  >
+    <div class="editor-frame" data-linewise-app>
+      {{ partial "command.html" . }}
+      <div class="editor-body">
+        {{ if $showExplorer }}
+          {{ partial "explorer.html" . }}
+          <button
+            type="button"
+            class="explorer-backdrop"
+            data-close-explorer
+            aria-label="Close file explorer"></button>
+        {{ end }}
+        <div class="editor-main" data-lw-scroller>
+          {{ if $showBufferline }}
+            {{ partial "topbar.html" . }}
+          {{ end }}
+          <main class="workspace" data-lw-main>
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+      </div>
+      {{ partial "help-panel.html" . }}
+      {{ partial "status.html" . }}
+    </div>
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

@@ -1,0 +1,39 @@
+baseURL = "https://accelerate-blog.pages.dev/"
+title = "Accelerate Blog"
+defaultContentLanguage = "zh-hans"
+locale = "zh-hans"
+theme = "linewise"
+
+[taxonomies]
+tag = "tags"
+
+[params.linewise]
+description = "Acclerate 的个人博客 —— 记录技术、学习与生活"
+author = "Acclerate"
+locale = "zh-hans"
+favicon = "favicon.svg"
+ogImage = "og.svg"
+showExplorer = true
+showBufferline = true
+
+[params.linewise.comments]
+provider = "none"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[outputFormats.JSON]
+mediaType = "application/json"
+baseName = "search"
+isPlainText = true
+
+[module.hugoVersion]
+extended = true
+min = "0.146.0"
+
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true

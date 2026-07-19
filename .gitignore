@@ -1,10 +1,9 @@
+# Hugo 构建产物
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# 操作系统 / 编辑器
 .DS_Store
 Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/
-_multiconfig.yml
-yuque.json
-.elog.env
+*.swp

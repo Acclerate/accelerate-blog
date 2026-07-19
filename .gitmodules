@@ -1,0 +1,3 @@
+[submodule "themes/linewise"]
+	path = themes/linewise
+	url = https://github.com/tabsp/linewise
