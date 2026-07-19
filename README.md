@@ -104,7 +104,122 @@ draft: false
 - 彻底删除：删掉对应的 `.md` 文件（或整个叶子包文件夹）。
 - 仅隐藏不发布：把 front matter 改为 `draft: true`（正式构建会排除草稿）。
 
-## 六、部署（Cloudflare Pages）
+## 六、语雀自动同步（Elog）
+
+> 在语雀上写作，GitHub Actions 每日 08:00 自动同步到 `content/posts/yuque/`。
+> 也可以在 Actions 页面手动点 **Run workflow** 立即同步。
+
+### 工作流程
+
+```
+┌────────┐  每日 08:00    ┌─────────────────┐  commit  ┌──────────┐
+│  语雀   │ ────────────▶│ GitHub Actions  │ ────────▶│ GitHub   │
+│ (写作) │    cron 触发  │ + Elog 拉文章   │   push   │ 仓库     │
+└────────┘               └─────────────────┘          └────┬─────┘
+                                                            │ push
+                                                            ▼
+                                                     ┌────────────┐
+                                                     │ Cloudflare │
+                                                     │   Pages    │
+                                                     └────┬───────┘
+                                                          │ 自动重建
+                                                          ▼
+                                          https://accelerate-blog.pages.dev
+```
+
+### 初次配置（3 步）
+
+#### 1. 获取语雀信息
+
+登录 https://www.yuque.com/ →
+- 头像 → **设置** → **Token** → 新建 Token（个人版即可，权限可全选）
+- 看你的知识库 URL：`https://www.yuque.com/<login>/<repo>`
+  - 例：`https://www.yuque.com/acclerate/blog` → `login=acclerate`, `repo=blog`
+
+#### 2. 配置 GitHub Secrets（3 个）
+
+仓库 → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**：
+
+| Name | Value |
+|---|---|
+| `YUQUE_TOKEN` | 第 1 步拿到的 Token |
+| `YUQUE_LOGIN` | 你的语雀 login（如 `acclerate`） |
+| `YUQUE_REPO` | 你的语雀 repo（如 `blog`） |
+
+#### 3. 开 Actions 写权限
+
+仓库 → **Settings** → **Actions** → **General** → **Workflow permissions** → 选 **Read and write permissions** → Save
+
+### 验证
+
+仓库 → **Actions** → 左侧 **Sync Yuque Posts** → 右上 **Run workflow** → 查看 log。
+
+成功的话会看到：
+
+```
+Changes detected:
+ content/posts/yuque/你的第一篇文章.md | 50 +++++++++++++++
+chore(yuque): auto sync from Yuque @ 2026-07-19 16:30:00
+```
+
+push 后 Cloudflare Pages 会自动重建部署。
+
+### 本地手动同步
+
+```bash
+# 1. 复制 .elog.example.env 为 .elog.env，填入 Token / login / repo
+cp .elog.example.env .elog.env
+
+# 2. 安装依赖（首次）
+npm install
+
+# 3. 同步
+npm run sync:local
+
+# 4. 本地预览（需先装 Hugo）
+hugo server -D
+```
+
+### 语雀文章 front matter 规范
+
+`elog.config.js` 里的 adapter 会自动生成 Hugo / Linewise 兼容的 front matter：
+
+```yaml
+---
+title: 文章标题
+date: 2026-07-19T10:00:00.000Z
+description: 文章描述
+tags: [标签1, 标签2]
+draft: false
+source: yuque
+doc_id: 123456789
+---
+```
+
+**如果想自定义标签 / 描述**，在语雀文档**开头**加 YAML front matter 块（语雀支持）：
+
+````markdown
+```yaml
+tags: [Hexo, 教程]
+description: 一句话简介
+```
+````
+
+adapter 会合并这些自定义字段。
+
+### 同步的文件在哪
+
+```
+content/posts/
+├── find-task-and-port-on-windows.md       # 手写的示例文章
+├── 使用CloudFlare部署GitHub仓库.../        # 手写的示例文章
+└── yuque/                                  # ← 语雀同步的文章在这里
+    ├── 文章1.md
+    ├── 文章2.md
+    └── ...
+```
+
+## 七、部署（Cloudflare Pages）
 
 推送 `main` 分支后，Cloudflare Pages 会自动从仓库拉取代码、用 Hugo 构建并发布。
 

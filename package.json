@@ -1,0 +1,14 @@
+{
+  "name": "accelerate-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hugo + Linewise + Cloudflare Pages blog with Yuque sync",
+  "scripts": {
+    "sync:local": "elog sync -e .elog.env",
+    "sync": "elog sync",
+    "clean:elog": "elog clean"
+  },
+  "devDependencies": {
+    "@elog/cli": "^0.12.0"
+  }
+}

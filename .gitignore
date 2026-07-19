@@ -7,3 +7,9 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Node / Elog
+node_modules/
+elog.cache.json
+elog.cache.*.json
+.elog.env
